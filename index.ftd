@@ -18,7 +18,7 @@ width: fill
 align: left
 
 -- lib.nav-logo:
-src: ./static/Rocky/Ellipse 46.png
+src: ./static/logo.png
 link: https://www.fifthtry.com
 
 -- lib.logo-text: Fifthtry
