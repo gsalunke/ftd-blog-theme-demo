@@ -1,0 +1,6 @@
+-- import: fpm
+-- fpm.package: ftd-blog-light
+
+-- fpm.font: Itim
+woff2: https://fonts.googleapis.com/css2?family=Itim&display=swap
+weight: 400

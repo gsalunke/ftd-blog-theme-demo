@@ -1,0 +1,58 @@
+-- ftd.image nav-logo:
+string src:
+string link:
+src: $src
+link: $link
+width: 48
+align: left
+
+-- ftd.text logo-text: $title
+caption title:
+string url: #
+link: $url
+color: #000000
+size: 48
+align: left
+font: Itim
+padding-left: 20
+
+-- ftd.text nav-link: $title
+caption title:
+optional string link: 
+link: $link
+color: #7B7B7B
+size: 20
+align: center
+font: Itim
+
+-- ftd.image nav-icon:
+string link:
+string src:
+src: $src
+link: $link
+optional string width:
+width: $width
+optional string height:
+height: $height
+align: center
+
+-- ftd.text author-title: $title
+caption title:
+optional string link: 
+link: $link
+color: #000000
+size: 56
+line-height: 67
+align: left
+font: Itim
+
+-- ftd.text author-bio: $title
+caption title:
+optional string link: 
+link: $link
+color: #000000
+size: 36
+line-height: 43
+align: left
+font: Itim
+
