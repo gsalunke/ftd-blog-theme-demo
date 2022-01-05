@@ -185,20 +185,6 @@ spacing: 40
 -- container: blog-wrap
 
 -- ftd.row:
-id: seperator
-background-color: \#F6F6F6
-width: fill
-padding-top: 20
-padding-bottom: 20
-padding-left: 150
-padding-right: 150
-
--- lib.post-seperator:
-src: ./static/post-seperator.png
-
--- container: blog-wrap
-
--- ftd.row:
 id: footer
 background-color: \#ffffff
 width: fill
