@@ -116,3 +116,24 @@ size: 66
 line-height: 79
 align: left
 font: Itim
+padding-bottom: 25
+
+-- ftd.text post-intro: $title
+caption title:
+optional string link: 
+link: $link
+color: #000000
+size: 36
+line-height: 43
+align: left
+font: Itim
+
+-- ftd.image post-seperator:
+string src:
+src: $src
+optional string width:
+width: $width
+optional string height:
+height: $height
+align: center
+
