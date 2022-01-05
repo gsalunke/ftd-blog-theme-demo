@@ -73,8 +73,8 @@ width: fill
 background-color: \#E7E7E7
 padding-left: 150
 padding-right: 150
-padding-top: 30
-padding-bottom: 30
+padding-top: 50
+padding-bottom: 50
 
 -- ftd.column:
 
@@ -95,3 +95,36 @@ width: 180
 height: 180
 
 -- lib.author-email: amitu@fifthtry.com
+
+-- container: blog-wrap
+
+-- ftd.row:
+id: post
+width: fill
+background-color: \#F6F6F6
+padding-left: 150
+padding-right: 150
+padding-top: 50
+padding-bottom: 50
+
+-- ftd.column:
+
+-- lib.post-thumbnail:
+link: http://www.post.com
+src: ./static/default-post.png
+width: 330
+height: 170
+
+-- lib.timestamp-caption: Published on
+
+-- lib.timestamp: 15th Dec 2021
+
+-- container: post
+
+-- ftd.row:
+width: fill
+spacing: 40
+
+-- ftd.column:
+
+-- lib.post-title: The fundamentals of understanding color theory
