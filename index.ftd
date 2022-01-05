@@ -85,7 +85,13 @@ padding-bottom: 30
 -- container: author
 
 -- ftd.row:
-width: fill
+min-width: 200
 
--- ftd.text: I am right side
+-- ftd.column:
 
+-- lib.author-photo:
+src: ./static/author-default.png
+width: 180
+height: 180
+
+-- lib.author-email: amitu@fifthtry.com

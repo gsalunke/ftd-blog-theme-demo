@@ -56,3 +56,24 @@ line-height: 43
 align: left
 font: Itim
 
+-- ftd.image author-photo:
+optional string link:
+string src:
+src: $src
+link: $link
+optional string width:
+width: $width
+optional string height:
+height: $height
+align: right
+border-radius: 500
+
+-- ftd.text author-email: $title
+caption title:
+optional string link: 
+link: $link
+color: #000000
+size: 24
+line-height: 28
+align: left
+font: Itim
