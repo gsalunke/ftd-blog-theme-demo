@@ -197,3 +197,6 @@ align: center
 -- ftd.text: © 2021 FPM Blog - Latest FPM News & Updates
 text-align: center
 width: fill
+font: Itim
+size: 16
+line-height: 20
