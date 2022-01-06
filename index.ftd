@@ -1,202 +1,189 @@
--- import: lib
--- ftd.column:
-id: blog-wrap
-width: fill
+-- import: docs
+
+-- docs.theme: gsalunke.github.io/ftd-blog-theme-demo/
+
+-- docs.markdown:
+
+This is library created for light blog theme. Github URL: https://github.com/gsalunke/ftd-blog-theme-demo/
 
 
--- ftd.row:
-id: header
-width: fill
-background-color: \#ffffff
-padding-left: 150
-padding-right: 150
-padding-top: 30
-padding-bottom: 30
+Sample Pages:
+- [blog-index](./blog-index/index.html)
 
--- ftd.row:
-width: fill
+-- docs.code: with caption
+lang: ftd
+
+\-- author-title: yo
+
+-- docs.output:
+
+--- author-title: yo
+
+-- docs.markdown: 
+
+link is optional
+
+-- docs.code: with link
+lang: ftd
+
+\-- author-title: yo
+link: http://www.google.com
+
+-- docs.output:
+
+--- author-title: yo
+link: http://www.google.com
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+-- ftd.image nav-logo:
+string src:
+string link:
+src: $src
+link: $link
+width: 48
 align: left
 
--- lib.nav-logo:
-src: ./static/logo.png
-link: https://www.fifthtry.com
+-- ftd.text logo-text: $title
+caption title:
+string url: #
+link: $url
+color: #000000
+size: 48
+align: left
+font: Itim
+padding-left: 20
 
--- lib.logo-text: Fifthtry
-url: https://www.fifthtry.com
+-- ftd.text nav-link: $title
+caption title:
+optional string link: 
+link: $link
+color: #7B7B7B
+size: 20
+align: center
+font: Itim
 
-
--- container: header
-background-color: \#F6F7FB
-
--- ftd.row:
-min-width: 350
-align: right
-spacing: 20
-
--- lib.nav-link: Follow us on
-
--- lib.nav-icon:
-src: ./static/twitter.png
-link: https://www.twitter.com/fifthtry
-width: 31
-height: 27
-
--- lib.nav-icon:
-src: ./static/facebook.png
-link: https://www.facebook.com/fifthtry
-width: 15
-height: 32
-
--- lib.nav-icon:
-src: ./static/linkedin.png
-link: https://www.linkedin.com/fifthtry
-width: 31
-height: 30
-
--- lib.nav-icon:
-src: ./static/instagram.png
-link: https://www.instagram.com/fifthtry
-width: 31
-height: 30
-
--- lib.nav-icon:
-src: ./static/redit.png
-link: https://www.redit.com/fifthtry
-width: 37
-height: 30
-
--- container: blog-wrap
-
--- ftd.row:
-id: author
-width: fill
-background-color: \#E7E7E7
-padding-left: 150
-padding-right: 150
-padding-top: 50
-padding-bottom: 50
-
--- ftd.column:
-
--- lib.author-title: Hi, I am Amit Upadhyay
-
--- lib.author-bio: I'm a web/software developer who loves to build projects and share valuable ps for new programmers on this blog.
-
--- container: author
-
--- ftd.row:
-min-width: 200
-
--- ftd.column:
-
--- lib.author-photo:
-src: ./static/author-default.png
-width: 180
-height: 180
-
--- lib.author-email: amitu@fifthtry.com
-
--- container: blog-wrap
-
--- ftd.row:
-id: post
-width: fill
-background-color: \#F6F6F6
-padding-left: 150
-padding-right: 150
-padding-top: 50
-spacing: 30
-padding-bottom: 50
-
--- ftd.column:
-
--- lib.post-thumbnail:
-link: http://www.post.com
-src: ./static/default-post.png
-width: 330
-height: 170
-
--- lib.timestamp-caption: Published on
-
--- lib.timestamp: 15th Dec 2021
-
--- container: post
-
--- ftd.row:
-width: fill
-spacing: 40
-
--- ftd.column:
-
--- lib.post-title: The fundamentals of understanding color theory
-
--- lib.post-intro: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-
--- container: blog-wrap
-
--- ftd.row:
-id: seperator
-background-color: \#F6F6F6
-width: fill
-padding-top: 20
-padding-bottom: 20
-padding-left: 150
-padding-right: 150
-
--- lib.post-seperator:
-src: ./static/post-seperator.png
-
--- container: blog-wrap
-
--- ftd.row:
-id: post
-width: fill
-background-color: \#F6F6F6
-padding-left: 150
-padding-right: 150
-padding-top: 50
-spacing: 30
-padding-bottom: 50
-
--- ftd.column:
-
--- lib.post-thumbnail:
-link: http://www.post.com
-src: ./static/default-post.png
-width: 330
-height: 170
-
--- lib.timestamp-caption: Published on
-
--- lib.timestamp: 15th Dec 2021
-
--- container: post
-
--- ftd.row:
-width: fill
-spacing: 40
-
--- ftd.column:
-
--- lib.post-title: The fundamentals of understanding color theory
-
--- lib.post-intro: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-
--- container: blog-wrap
-
--- ftd.row:
-id: footer
-background-color: \#ffffff
-width: fill
-padding-top: 30
-padding-bottom: 30
-padding-left: 150
-padding-right: 150
+-- ftd.image nav-icon:
+string link:
+string src:
+src: $src
+link: $link
+optional string width:
+width: $width
+optional string height:
+height: $height
 align: center
 
--- ftd.text: © 2022 FPM Blog - Latest FPM News & Updates
-text-align: center
-width: fill
+-- ftd.text author-title: $title
+caption title:
+optional string link: 
+link: $link
+color: #000000
+size: 56
+line-height: 67
+align: left
 font: Itim
-size: 16
-line-height: 20
+
+-- ftd.text author-bio: $title
+caption title:
+optional string link: 
+link: $link
+color: #000000
+size: 36
+line-height: 43
+align: left
+font: Itim
+
+-- ftd.image author-photo:
+optional string link:
+string src:
+src: $src
+link: $link
+optional string width:
+width: $width
+optional string height:
+height: $height
+align: right
+border-radius: 500
+
+-- ftd.text author-email: $title
+caption title:
+optional string link: 
+link: $link
+color: #000000
+size: 24
+line-height: 28
+align: left
+font: Itim
+
+
+-- ftd.image post-thumbnail:
+optional string link:
+string src:
+src: $src
+link: $link
+optional string width:
+width: $width
+optional string height:
+height: $height
+align: left
+
+-- ftd.text timestamp-caption: $title
+caption title:
+color: #8A8A8A
+size: 24
+line-height: 28
+align: left
+font: Itim
+padding-top: 15
+
+-- ftd.text timestamp: $title
+caption title:
+color: #000000
+size: 30
+line-height: 36
+align: left
+font: Itim
+
+-- ftd.text post-title: $title
+caption title:
+optional string link: 
+link: $link
+color: #000000
+size: 66
+line-height: 79
+align: left
+font: Itim
+padding-bottom: 25
+
+-- ftd.text post-intro: $title
+caption title:
+optional string link: 
+link: $link
+color: #000000
+size: 36
+line-height: 43
+align: left
+font: Itim
+
+-- ftd.image post-seperator:
+string src:
+src: $src
+optional string width:
+width: $width
+optional string height:
+height: $height
+align: center
+
