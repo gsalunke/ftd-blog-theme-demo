@@ -19,6 +19,142 @@ Sample Pages:
 - [blog-index](./blog-index/index.html)
 
 
+-- docs.component: nav-logo
+
+-- docs.markdown:
+
+This component used in header component as your site logo:
+
+-- docs.code: with link and src url
+lang: ftd
+
+\-- nav-logo:
+src: https://i.imgur.com/aijdJIB.png
+link: https://www.fifthtry.com
+
+-- docs.output:
+
+--- nav-logo:
+src: https://i.imgur.com/aijdJIB.png
+link: https://www.fifthtry.com
+
+
+-- docs.component: site-title
+
+-- docs.markdown:
+
+This component used in header component as your site/blog title:
+
+-- docs.code: with caption
+lang: ftd
+
+\-- site-title: fifthtry
+
+-- docs.output:
+
+--- site-title: fifthtry
+
+
+-- docs.component-argument: url
+
+-- docs.markdown:
+
+Optional argument as url can be added to your site/blog title:
+
+-- docs.code: with optional argument 'url'
+lang: ftd
+
+\-- site-title: fifthtry
+url: https://www.fifthtry.com
+
+-- docs.output:
+
+--- site-title: fifthtry
+url: https://www.fifthtry.com
+
+
+-- docs.component: nav-link
+
+-- docs.markdown:
+
+This component used in header component as link into header:
+
+-- docs.code: with caption
+lang: ftd
+
+\-- nav-link: Follow us on
+
+-- docs.output:
+
+--- nav-link: Follow us on
+
+
+
+-- docs.component-argument: link
+
+-- docs.markdown:
+
+This argument is optional and used for link component as it's link url:
+
+-- docs.code: with optional argument 'link'
+lang: ftd
+
+\-- nav-link: Follow us on
+link: https://www.fifthtry.com
+
+-- docs.output:
+
+--- nav-link: Follow us on
+link: https://www.fifthtry.com
+
+
+
+-- docs.component: nav-icon
+
+-- docs.markdown:
+
+This component used in header component as social handler icon into header:
+
+-- docs.code: with src and icon link url
+lang: ftd
+
+\-- nav-icon:
+src: /static/twitter.png
+link: https://www.twitter.com/fifthtry
+
+-- docs.output:
+
+--- nav-icon:
+src: /static/twitter.png
+link: https://www.twitter.com/fifthtry
+width: auto
+
+
+-- docs.component-argument: width and height
+
+-- docs.markdown:
+
+These arguments are optional and can be used as and when required to adjust social icon height and width:
+
+-- docs.code: with optional argument 'width' & 'height'
+lang: ftd
+
+\-- nav-icon:
+src: /static/twitter.png
+link: https://www.twitter.com/fifthtry
+width: 31
+height: 27
+
+-- docs.output:
+
+--- nav-icon:
+src: /static/twitter.png
+link: https://www.twitter.com/fifthtry
+width: 31
+height: 27
+
+
+
 -- docs.component: author-title
 
 -- docs.markdown:
@@ -65,18 +201,17 @@ link: http://www.google.com
 
 
 
-
 -- ftd.image nav-logo:
 string src:
 string link:
 src: $src
 link: $link
-width: 48
+width: auto
 align: left
 
--- ftd.text logo-text: $title
+-- ftd.text site-title: $title
 caption title:
-string url: #
+optional string url:
 link: $url
 color: #000000
 size: 48
@@ -98,9 +233,9 @@ string link:
 string src:
 src: $src
 link: $link
-optional string width:
+optional string width: auto
 width: $width
-optional string height:
+optional string height: auto
 height: $height
 align: center
 

@@ -21,7 +21,7 @@ align: left
 src: /static/logo.png
 link: https://www.fifthtry.com
 
--- lib.logo-text: Fifthtry
+-- lib.site-title: Fifthtry
 url: https://www.fifthtry.com
 
 
