@@ -1,4 +1,12 @@
--- import: docs
+-- import: docs2 as docs
+
+-- ftd.column:
+width: fill
+padding-left: 150
+padding-right: 150
+padding-bottom:40
+padding-top: 40
+background-color: #f6f6f6
 
 -- docs.theme: gsalunke.github.io/ftd-blog-theme-demo/
 
@@ -10,28 +18,38 @@ This is library created for light blog theme. Github URL: https://github.com/gsa
 Sample Pages:
 - [blog-index](./blog-index/index.html)
 
+
+-- docs.component: author-title
+
+-- docs.markdown:
+
+This component can be used to show author-title on author page:
+
 -- docs.code: with caption
 lang: ftd
 
-\-- author-title: yo
+\-- author-title: John Cartor
 
 -- docs.output:
 
---- author-title: yo
+--- author-title: John Cartor
+
+
+-- docs.component-argument: link
 
 -- docs.markdown: 
 
-link is optional
+link can be added to author title. link is optional attribute:
 
 -- docs.code: with link
 lang: ftd
 
-\-- author-title: yo
+\-- author-title: John Cartor
 link: http://www.google.com
 
 -- docs.output:
 
---- author-title: yo
+--- author-title: John Cartor
 link: http://www.google.com
 
 

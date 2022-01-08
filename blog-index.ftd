@@ -18,7 +18,7 @@ width: fill
 align: left
 
 -- lib.nav-logo:
-src: ./static/logo.png
+src: /static/logo.png
 link: https://www.fifthtry.com
 
 -- lib.logo-text: Fifthtry
@@ -36,31 +36,31 @@ spacing: 20
 -- lib.nav-link: Follow us on
 
 -- lib.nav-icon:
-src: ./static/twitter.png
+src: /static/twitter.png
 link: https://www.twitter.com/fifthtry
 width: 31
 height: 27
 
 -- lib.nav-icon:
-src: ./static/facebook.png
+src: /static/facebook.png
 link: https://www.facebook.com/fifthtry
 width: 15
 height: 32
 
 -- lib.nav-icon:
-src: ./static/linkedin.png
+src: /static/linkedin.png
 link: https://www.linkedin.com/fifthtry
 width: 31
 height: 30
 
 -- lib.nav-icon:
-src: ./static/instagram.png
+src: /static/instagram.png
 link: https://www.instagram.com/fifthtry
 width: 31
 height: 30
 
 -- lib.nav-icon:
-src: ./static/redit.png
+src: /static/redit.png
 link: https://www.redit.com/fifthtry
 width: 37
 height: 30
@@ -90,7 +90,7 @@ min-width: 200
 -- ftd.column:
 
 -- lib.author-photo:
-src: ./static/author-default.png
+src: /static/author-default.png
 width: 180
 height: 180
 
@@ -112,7 +112,7 @@ padding-bottom: 50
 
 -- lib.post-thumbnail:
 link: http://www.post.com
-src: ./static/default-post.png
+src: /static/default-post.png
 width: 330
 height: 170
 
@@ -144,7 +144,7 @@ padding-left: 150
 padding-right: 150
 
 -- lib.post-seperator:
-src: ./static/post-seperator.png
+src: /static/post-seperator.png
 
 -- container: blog-wrap
 
@@ -162,7 +162,7 @@ padding-bottom: 50
 
 -- lib.post-thumbnail:
 link: http://www.post.com
-src: ./static/default-post.png
+src: /static/default-post.png
 width: 330
 height: 170
 

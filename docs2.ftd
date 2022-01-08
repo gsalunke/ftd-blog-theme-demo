@@ -1,33 +1,29 @@
 -- import: fpm-ui
 
+-- string neutral: #fff
+-- string neutral-200: #e5e5e5
+-- string neutral-700: #18191a
+-- string neutral-800: #000
+
+
 -- ftd.text theme: $name
-width: fill
 caption name:
 size: 48
 style: bold
-color: #333
+color: red
 
 
 -- ftd.text component: $name
-width: fill
 caption name:
 size: 32
 style: bold
 color: #333
 
 -- ftd.text component-argument: $name
-width: fill
 caption name:
-size: 28
+size: 24
 style: bold
 color: #333
-
-
--- string neutral: #fff
--- string neutral-200: #e5e5e5
--- string neutral-700: #18191a
--- string neutral-800: #000
-
 
 -- ftd.text markdown:
 body body:
@@ -47,6 +43,7 @@ caption caption: Output
 width: fill
 open: output-container
 padding-top: 12
+padding-bottom:  20
 
 --- ftd.text: $caption
 color: white
