@@ -159,7 +159,7 @@ height: 27
 
 -- docs.markdown:
 
-This component can be used to show author-title on author page:
+This component can be used to show author-title on blog index page:
 
 -- docs.code: with caption
 lang: ftd
@@ -171,22 +171,299 @@ lang: ftd
 --- author-title: John Cartor
 
 
+
 -- docs.component-argument: link
 
 -- docs.markdown: 
 
-link can be added to author title. link is optional attribute:
+link can be added to author-title & it is optional attribute:
 
 -- docs.code: with link
 lang: ftd
 
 \-- author-title: John Cartor
-link: http://www.google.com
+link: http://www.fifthtry.com
 
 -- docs.output:
 
 --- author-title: John Cartor
-link: http://www.google.com
+link: http://www.fifthtry.com
+
+
+
+
+-- docs.component: author-bio
+
+-- docs.markdown:
+
+This component can be used to show author-bio on blog index page:
+
+-- docs.code: with caption
+lang: ftd
+
+\-- author-bio: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+
+-- docs.output:
+
+--- author-bio: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+
+
+
+-- docs.component-argument: link
+
+-- docs.markdown: 
+
+link can be added to author-bio component & it is optional attribute:
+
+-- docs.code: with link
+lang: ftd
+
+\-- author-bio: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+link: http://www.fifthtry.com
+
+-- docs.output:
+
+--- author-bio: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+link: http://www.fifthtry.com
+
+
+
+
+-- docs.component: author-photo
+
+-- docs.markdown:
+
+This component used in as author profile image. link is an optional argument:
+
+-- docs.code: with src and link url(optional)
+lang: ftd
+
+\-- author-photo:
+src: /static/author-default.png
+link: https://www.fifthtry.com/
+
+-- docs.output:
+
+--- author-photo:
+src: /static/author-default.png
+link: https://www.fifthtry.com/
+width: auto
+
+
+
+-- docs.component-argument: width and height
+
+-- docs.markdown:
+
+These arguments are optional and can be used as and when required to adjust author profile image height and width:
+
+-- docs.code: with optional argument 'width' & 'height'
+lang: ftd
+
+\-- author-photo:
+src: /static/author-default.png
+link: https://www.fifthtry.com/
+width: 180
+height: 180
+
+-- docs.output:
+
+--- author-photo:
+src: /static/author-default.png
+link: https://www.fifthtry.com/
+width: 180
+height: 180
+
+
+
+-- docs.component: author-email
+
+-- docs.markdown:
+
+This component can be used to show author-email:
+
+-- docs.code: with caption
+lang: ftd
+
+\-- author-email: johncartor@firthtry.com
+
+-- docs.output:
+
+--- author-email: johncartor@firthtry.com
+
+
+
+
+-- docs.component: post-thumbnail
+
+-- docs.markdown:
+
+This component used in as post-thumbnail image on index/home page while showing posts list:
+
+-- docs.code: with src & link url(optional) attributes: width, height(optional) can be added to adjust image dimentions:
+lang: ftd
+
+\-- post-thumbnail:
+link: http://www.post.com
+src: /static/default-post.png
+width: 330
+height: 170
+
+
+-- docs.output:
+
+--- post-thumbnail:
+link: http://www.post.com
+src: /static/default-post.png
+width: 330
+height: 170
+
+
+
+
+-- docs.component: timestamp-caption
+
+-- docs.markdown:
+
+This component is used to show timestamp-caption, e.g. 'Published on:' OR 'Posted at:' etc.:
+
+-- docs.code: with caption
+lang: ftd
+
+\-- timestamp-caption: Published on
+
+-- docs.output:
+
+--- timestamp-caption: Published on
+
+
+
+
+
+
+-- docs.component: timestamp
+
+-- docs.markdown:
+
+This component is used to show timestamp of the post:
+
+-- docs.code: with caption
+lang: ftd
+
+\-- timestamp: 15th Dec 2021
+
+-- docs.output:
+
+--- timestamp: 15th Dec 2021
+
+
+
+
+-- docs.component: post-title
+
+-- docs.markdown:
+
+This component is used to show title of the post:
+
+-- docs.code: with caption
+lang: ftd
+
+\-- post-title: The fundamentals of understanding color theory
+
+-- docs.output:
+
+--- post-title: The fundamentals of understanding color theory
+
+
+
+-- docs.component-argument: link
+
+-- docs.markdown:
+
+This arugument is used to add link to post-title:
+
+-- docs.code: with link
+lang: ftd
+
+\-- post-title: The fundamentals of understanding color theory
+link: http://www.fifthtry.com
+
+-- docs.output:
+
+--- post-title: The fundamentals of understanding color theory
+link: http://www.fifthtry.com
+
+
+
+
+
+
+
+-- docs.component: post-intro
+
+-- docs.markdown:
+
+This component post-intro is used to show few lines of starting content of the post:
+
+-- docs.code: with caption
+lang: ftd
+
+\-- post-intro: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+
+
+-- docs.output:
+
+--- post-intro: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+
+
+
+
+-- docs.component-argument: link
+
+-- docs.markdown:
+
+This arugument is used to add link to post-intro:
+
+-- docs.code: with link
+lang: ftd
+
+\-- post-intro: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+link: http://www.fifthtry.com
+
+-- docs.output:
+
+--- post-intro: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+link: http://www.fifthtry.com
+
+
+
+
+
+
+
+-- docs.component: post-seperator
+
+-- docs.markdown:
+
+This component used in as seperator image after each post, while showing posts list:
+
+-- docs.code: with src 
+lang: ftd
+
+\-- post-seperator:
+src: /static/post-seperator.png
+
+
+-- docs.output:
+
+--- post-seperator:
+src: /static/post-seperator.png
+
+
+
+
+
+
 
 
 
@@ -273,8 +550,6 @@ border-radius: 500
 
 -- ftd.text author-email: $title
 caption title:
-optional string link: 
-link: $link
 color: #000000
 size: 24
 line-height: 28
