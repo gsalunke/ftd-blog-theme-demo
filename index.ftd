@@ -119,13 +119,13 @@ This component used in header component as social handler icon into header:
 lang: ftd
 
 \-- nav-icon:
-src: /static/twitter.png
+src: ./static/twitter.png
 link: https://www.twitter.com/fifthtry
 
 -- docs.output:
 
 --- nav-icon:
-src: /static/twitter.png
+src: ./static/twitter.png
 link: https://www.twitter.com/fifthtry
 width: auto
 
@@ -140,7 +140,7 @@ These arguments are optional and can be used as and when required to adjust soci
 lang: ftd
 
 \-- nav-icon:
-src: /static/twitter.png
+src: ./static/twitter.png
 link: https://www.twitter.com/fifthtry
 width: 31
 height: 27
@@ -148,7 +148,7 @@ height: 27
 -- docs.output:
 
 --- nav-icon:
-src: /static/twitter.png
+src: ./static/twitter.png
 link: https://www.twitter.com/fifthtry
 width: 31
 height: 27
@@ -239,13 +239,13 @@ This component used in as author profile image. link is an optional argument:
 lang: ftd
 
 \-- author-photo:
-src: /static/author-default.png
+src: ./static/author-default.png
 link: https://www.fifthtry.com/
 
 -- docs.output:
 
 --- author-photo:
-src: /static/author-default.png
+src: ./static/author-default.png
 link: https://www.fifthtry.com/
 width: auto
 
@@ -261,7 +261,7 @@ These arguments are optional and can be used as and when required to adjust auth
 lang: ftd
 
 \-- author-photo:
-src: /static/author-default.png
+src: ./static/author-default.png
 link: https://www.fifthtry.com/
 width: 180
 height: 180
@@ -269,7 +269,7 @@ height: 180
 -- docs.output:
 
 --- author-photo:
-src: /static/author-default.png
+src: ./static/author-default.png
 link: https://www.fifthtry.com/
 width: 180
 height: 180
@@ -305,7 +305,7 @@ lang: ftd
 
 \-- post-thumbnail:
 link: http://www.post.com
-src: /static/default-post.png
+src: ./static/default-post.png
 width: 330
 height: 170
 
@@ -314,7 +314,7 @@ height: 170
 
 --- post-thumbnail:
 link: http://www.post.com
-src: /static/default-post.png
+src: ./static/default-post.png
 width: 330
 height: 170
 
@@ -451,13 +451,13 @@ This component used in as seperator image after each post, while showing posts l
 lang: ftd
 
 \-- post-seperator:
-src: /static/post-seperator.png
+src: ./static/post-seperator.png
 
 
 -- docs.output:
 
 --- post-seperator:
-src: /static/post-seperator.png
+src: ./static/post-seperator.png
 
 
 
