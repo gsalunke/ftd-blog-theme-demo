@@ -1,4 +1,5 @@
--- import: docs2 as docs
+-- import: docs as docs
+-- import: fpm-ui
 
 -- ftd.column:
 width: fill
@@ -6,20 +7,27 @@ padding-left: 150
 padding-right: 150
 padding-bottom:40
 padding-top: 40
+background-color if $fpm-ui.dark-mode: #333333 
 background-color: #f6f6f6
 
 -- docs.theme: gsalunke.github.io/ftd-blog-theme-demo/
 
+-- docs.dark-mode-switcher:
+
+
+
 -- docs.markdown:
 
-This is library created for light blog theme. Github URL: https://github.com/gsalunke/ftd-blog-theme-demo/
+This is library created for light blog theme. Github URL: {url}.
 
 
 Sample Pages:
 - [blog-index](./blog-index/index.html)
 
+-- ftd.text url: sometext here
+color: yellow
 
--- docs.component: nav-logo
+-- docs.component: nav-logo 
 
 -- docs.markdown:
 
@@ -119,13 +127,13 @@ This component used in header component as social handler icon into header:
 lang: ftd
 
 \-- nav-icon:
-src: ./static/twitter.png
+src: static/twitter.png
 link: https://www.twitter.com/fifthtry
 
 -- docs.output:
 
 --- nav-icon:
-src: ./static/twitter.png
+src: static/twitter.png
 link: https://www.twitter.com/fifthtry
 width: auto
 
@@ -140,7 +148,7 @@ These arguments are optional and can be used as and when required to adjust soci
 lang: ftd
 
 \-- nav-icon:
-src: ./static/twitter.png
+src: static/twitter.png
 link: https://www.twitter.com/fifthtry
 width: 31
 height: 27
@@ -148,7 +156,7 @@ height: 27
 -- docs.output:
 
 --- nav-icon:
-src: ./static/twitter.png
+src: static/twitter.png
 link: https://www.twitter.com/fifthtry
 width: 31
 height: 27
@@ -239,13 +247,13 @@ This component used in as author profile image. link is an optional argument:
 lang: ftd
 
 \-- author-photo:
-src: ./static/author-default.png
+src: static/author-default.png
 link: https://www.fifthtry.com/
 
 -- docs.output:
 
 --- author-photo:
-src: ./static/author-default.png
+src: static/author-default.png
 link: https://www.fifthtry.com/
 width: auto
 
@@ -261,7 +269,7 @@ These arguments are optional and can be used as and when required to adjust auth
 lang: ftd
 
 \-- author-photo:
-src: ./static/author-default.png
+src: static/author-default.png
 link: https://www.fifthtry.com/
 width: 180
 height: 180
@@ -269,7 +277,7 @@ height: 180
 -- docs.output:
 
 --- author-photo:
-src: ./static/author-default.png
+src: static/author-default.png
 link: https://www.fifthtry.com/
 width: 180
 height: 180
@@ -305,7 +313,7 @@ lang: ftd
 
 \-- post-thumbnail:
 link: http://www.post.com
-src: ./static/default-post.png
+src: static/default-post.png
 width: 330
 height: 170
 
@@ -314,7 +322,7 @@ height: 170
 
 --- post-thumbnail:
 link: http://www.post.com
-src: ./static/default-post.png
+src: static/default-post.png
 width: 330
 height: 170
 
@@ -451,13 +459,13 @@ This component used in as seperator image after each post, while showing posts l
 lang: ftd
 
 \-- post-seperator:
-src: ./static/post-seperator.png
+src: static/post-seperator.png
 
 
 -- docs.output:
 
 --- post-seperator:
-src: ./static/post-seperator.png
+src: static/post-seperator.png
 
 
 
@@ -522,9 +530,12 @@ optional string link:
 link: $link
 color: #000000
 size: 56
+size if $fpm-ui.mobile: 28
 line-height: 67
+/line-height if $fpm-ui.mobile: 34
 align: left
 font: Itim
+
 
 -- ftd.text author-bio: $title
 caption title:
@@ -569,6 +580,7 @@ height: $height
 align: left
 
 -- ftd.text timestamp-caption: $title
+if: not $fpm-ui.mobile
 caption title:
 color: #8A8A8A
 size: 24

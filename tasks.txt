@@ -1,0 +1,6 @@
+Dt. 09/01/2022
+
+1. docs page - dark mode changes
+2. component - index.ftd - dark mode change
+3. blog-index - remove all ftd ref and move it to index.ftd
+ 

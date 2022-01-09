@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <meta charset="UTF-8">
+        <meta charset="UTF-8"><base href="/">
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
         <title>Fifthtry</title>
         <script type="ftd" id="ftd-data">{
@@ -74,61 +74,61 @@
     "dependencies": {}
   },
   "@src@0,0,0,0": {
-    "value": "/static/logo.png",
+    "value": "./static/logo.png",
     "dependencies": {
       "0,0,0,0": "[{\"dependency_type\":\"Value\",\"condition\":null,\"parameters\":{}}]"
     }
   },
   "@src@0,0,1,1": {
-    "value": "/static/twitter.png",
+    "value": "./static/twitter.png",
     "dependencies": {
       "0,0,1,1": "[{\"dependency_type\":\"Value\",\"condition\":null,\"parameters\":{}}]"
     }
   },
   "@src@0,0,1,2": {
-    "value": "/static/facebook.png",
+    "value": "./static/facebook.png",
     "dependencies": {
       "0,0,1,2": "[{\"dependency_type\":\"Value\",\"condition\":null,\"parameters\":{}}]"
     }
   },
   "@src@0,0,1,3": {
-    "value": "/static/linkedin.png",
+    "value": "./static/linkedin.png",
     "dependencies": {
       "0,0,1,3": "[{\"dependency_type\":\"Value\",\"condition\":null,\"parameters\":{}}]"
     }
   },
   "@src@0,0,1,4": {
-    "value": "/static/instagram.png",
+    "value": "./static/instagram.png",
     "dependencies": {
       "0,0,1,4": "[{\"dependency_type\":\"Value\",\"condition\":null,\"parameters\":{}}]"
     }
   },
   "@src@0,0,1,5": {
-    "value": "/static/redit.png",
+    "value": "./static/redit.png",
     "dependencies": {
       "0,0,1,5": "[{\"dependency_type\":\"Value\",\"condition\":null,\"parameters\":{}}]"
     }
   },
   "@src@0,1,1,0,0": {
-    "value": "/static/author-default.png",
+    "value": "./static/author-default.png",
     "dependencies": {
       "0,1,1,0,0": "[{\"dependency_type\":\"Value\",\"condition\":null,\"parameters\":{}}]"
     }
   },
   "@src@0,2,0,0": {
-    "value": "/static/default-post.png",
+    "value": "./static/default-post.png",
     "dependencies": {
       "0,2,0,0": "[{\"dependency_type\":\"Value\",\"condition\":null,\"parameters\":{}}]"
     }
   },
   "@src@0,3,0": {
-    "value": "/static/post-seperator.png",
+    "value": "./static/post-seperator.png",
     "dependencies": {
       "0,3,0": "[{\"dependency_type\":\"Value\",\"condition\":null,\"parameters\":{}}]"
     }
   },
   "@src@0,4,0,0": {
-    "value": "/static/default-post.png",
+    "value": "./static/default-post.png",
     "dependencies": {
       "0,4,0,0": "[{\"dependency_type\":\"Value\",\"condition\":null,\"parameters\":{}}]"
     }
@@ -247,19 +247,19 @@
     "value": "330",
     "dependencies": {}
   },
-  "docs2#neutral": {
+  "docs#neutral": {
     "value": "#fff",
     "dependencies": {}
   },
-  "docs2#neutral-200": {
+  "docs#neutral-200": {
     "value": "#e5e5e5",
     "dependencies": {}
   },
-  "docs2#neutral-700": {
+  "docs#neutral-700": {
     "value": "#18191a",
     "dependencies": {}
   },
-  "docs2#neutral-800": {
+  "docs#neutral-800": {
     "value": "#000",
     "dependencies": {}
   },
@@ -301,7 +301,11 @@
   },
   "fpm-ui#mobile": {
     "value": "true",
-    "dependencies": {}
+    "dependencies": {
+      "0,1,0,0": "[{\"dependency_type\":\"Style\",\"condition\":\"true\",\"parameters\":{\"font-size\":{\"value\":{\"value\":\"28px\",\"important\":false},\"default\":{\"value\":\"56px\",\"important\":false}}}}]",
+      "0,2,0,1": "[{\"dependency_type\":\"Visible\",\"condition\":\"false\",\"parameters\":{}}]",
+      "0,4,0,1": "[{\"dependency_type\":\"Visible\",\"condition\":\"false\",\"parameters\":{}}]"
+    }
   },
   "fpm-ui#never-marked": {
     "value": "Never Marked",
@@ -509,33 +513,37 @@ ul {
 .ft_md blockquote>blockquote {
     margin: 0;
 }
+
+body.fpm-dark .ft_md code {
+    color: black;
+}
 </style>
     </head>
     <body>
-        <div data-id="main:root" style="align-items: flex-start; align-self: center; border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; display: flex; flex-direction: column; flex-wrap: wrap; height: 100%; justify-content: flex-start; margin-bottom: auto; margin-top: auto; white-space: initial; width: 100%" class="ft_md"><div data-id="blog-wrap:0:main" id="blog-wrap" style="align-items: flex-start; align-self: flex-start; border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; display: flex; flex-direction: column; flex-wrap: nowrap; justify-content: flex-start; white-space: initial; width: 100%" class="ft_md"><div data-id="header:0,0:main" id="header" style="align-items: flex-start; align-self: flex-start; background-color: rgba(255,255,255,1); border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; display: flex; flex-direction: row; flex-wrap: nowrap; justify-content: flex-start; padding-bottom: 30px; padding-left: 150px; padding-right: 150px; padding-top: 30px; white-space: initial; width: 100%" class="ft_md"><div data-id="0,0,0:main" style="align-items: flex-start; align-self: flex-start; border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; display: flex; flex-direction: row; flex-wrap: nowrap; justify-content: flex-start; margin-bottom: auto; margin-top: auto; white-space: initial; width: 100%" class="ft_md"><a data-id="0,0,0,0:main" href="https://www.fifthtry.com" style="align-self: flex-start; border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; cursor: pointer; margin-bottom: auto; margin-top: auto; white-space: initial; width: auto" class="ft_md"><img alt="" data-id="main:root" src="/static/logo.png" style="width: 100%"></a>
-<a data-id="0,0,0,1:main" href="https://www.fifthtry.com" style="align-self: flex-start; border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; color: rgba(0,0,0,1); cursor: pointer; font-family: Itim; font-size: 48px; font-weight: 400; margin-bottom: auto; margin-top: auto; padding-left: 20px; text-align: left; white-space: initial" class="ft_md">Fifthtry</a></div>
-<div data-id="0,0,1:main" data-spacing="margin-left:20px" style="align-items: flex-start; align-self: flex-end; border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; display: flex; flex-direction: row; flex-wrap: nowrap; justify-content: flex-start; margin-bottom: auto; margin-left: auto; margin-top: auto; min-width: 350px; white-space: initial" class="ft_md"><div data-id="0,0,1,0:main" style="align-self: center; border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; color: rgba(123,123,123,1); font-family: Itim; font-size: 20px; font-weight: 400; margin-bottom: auto; margin-top: auto; text-align: left; white-space: initial" class="ft_md">Follow us on</div>
-<a data-id="0,0,1,1:main" href="https://www.twitter.com/fifthtry" style="align-self: center; border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; cursor: pointer; height: 27px; margin-bottom: auto; margin-left: 20px; margin-top: auto; white-space: initial; width: 31px" class="ft_md"><img alt="" data-id="main:root" src="/static/twitter.png" style="width: 100%"></a>
-<a data-id="0,0,1,2:main" href="https://www.facebook.com/fifthtry" style="align-self: center; border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; cursor: pointer; height: 32px; margin-bottom: auto; margin-left: 20px; margin-top: auto; white-space: initial; width: 15px" class="ft_md"><img alt="" data-id="main:root" src="/static/facebook.png" style="width: 100%"></a>
-<a data-id="0,0,1,3:main" href="https://www.linkedin.com/fifthtry" style="align-self: center; border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; cursor: pointer; height: 30px; margin-bottom: auto; margin-left: 20px; margin-top: auto; white-space: initial; width: 31px" class="ft_md"><img alt="" data-id="main:root" src="/static/linkedin.png" style="width: 100%"></a>
-<a data-id="0,0,1,4:main" href="https://www.instagram.com/fifthtry" style="align-self: center; border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; cursor: pointer; height: 30px; margin-bottom: auto; margin-left: 20px; margin-top: auto; white-space: initial; width: 31px" class="ft_md"><img alt="" data-id="main:root" src="/static/instagram.png" style="width: 100%"></a>
-<a data-id="0,0,1,5:main" href="https://www.redit.com/fifthtry" style="align-self: center; border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; cursor: pointer; height: 30px; margin-bottom: auto; margin-left: 20px; margin-top: auto; white-space: initial; width: 37px" class="ft_md"><img alt="" data-id="main:root" src="/static/redit.png" style="width: 100%"></a></div></div>
-<div data-id="author:0,1:main" id="author" style="align-items: flex-start; align-self: flex-start; background-color: rgba(231,231,231,1); border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; display: flex; flex-direction: row; flex-wrap: nowrap; justify-content: flex-start; padding-bottom: 50px; padding-left: 150px; padding-right: 150px; padding-top: 50px; white-space: initial; width: 100%" class="ft_md"><div data-id="0,1,0:main" style="align-items: flex-start; align-self: flex-start; border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; display: flex; flex-direction: column; flex-wrap: nowrap; justify-content: flex-start; white-space: initial" class="ft_md"><div data-id="0,1,0,0:main" style="align-self: flex-start; border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; color: rgba(0,0,0,1); font-family: Itim; font-size: 56px; font-weight: 400; line-height: 67px; margin-bottom: auto; margin-top: auto; text-align: left; white-space: initial" class="ft_md">Hi, I am Amit Upadhyay</div>
-<div data-id="0,1,0,1:main" style="align-self: flex-start; border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; color: rgba(0,0,0,1); font-family: Itim; font-size: 36px; font-weight: 400; line-height: 43px; margin-bottom: auto; margin-top: auto; text-align: left; white-space: initial" class="ft_md">I’m a web/software developer who loves to build projects and share valuable ps for new programmers on this blog.</div></div>
-<div data-id="0,1,1:main" style="align-items: flex-start; align-self: flex-start; border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; display: flex; flex-direction: row; flex-wrap: nowrap; justify-content: flex-start; min-width: 200px; white-space: initial" class="ft_md"><div data-id="0,1,1,0:main" style="align-items: flex-start; align-self: flex-start; border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; display: flex; flex-direction: column; flex-wrap: nowrap; justify-content: flex-start; white-space: initial" class="ft_md"><img alt="" data-id="0,1,1,0,0:main" src="/static/author-default.png" style="align-self: flex-end; border-radius: 500px; border-style: solid; border-width: 0px; box-sizing: border-box; height: 180px; margin-bottom: auto; margin-left: auto; margin-top: auto; white-space: initial; width: 180px">
-<div data-id="0,1,1,0,1:main" style="align-self: flex-start; border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; color: rgba(0,0,0,1); font-family: Itim; font-size: 24px; font-weight: 400; line-height: 28px; margin-bottom: auto; margin-top: auto; text-align: left; white-space: initial" class="ft_md"><a href="mailto:amitu@fifthtry.com">amitu@fifthtry.com</a></div></div></div></div>
-<div data-id="post:0,2:main" data-spacing="margin-left:30px" id="post" style="align-items: flex-start; align-self: flex-start; background-color: rgba(246,246,246,1); border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; display: flex; flex-direction: row; flex-wrap: nowrap; justify-content: flex-start; padding-bottom: 50px; padding-left: 150px; padding-right: 150px; padding-top: 50px; white-space: initial; width: 100%" class="ft_md"><div data-id="0,2,0:main" style="align-items: flex-start; align-self: flex-start; border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; display: flex; flex-direction: column; flex-wrap: nowrap; justify-content: flex-start; white-space: initial" class="ft_md"><a data-id="0,2,0,0:main" href="http://www.post.com" style="align-self: flex-start; border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; cursor: pointer; height: 170px; margin-bottom: auto; margin-top: auto; white-space: initial; width: 330px" class="ft_md"><img alt="" data-id="main:root" src="/static/default-post.png" style="width: 100%"></a>
-<div data-id="0,2,0,1:main" style="align-self: flex-start; border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; color: rgba(138,138,138,1); font-family: Itim; font-size: 24px; font-weight: 400; line-height: 28px; margin-bottom: auto; margin-top: auto; padding-top: 15px; text-align: left; white-space: initial" class="ft_md">Published on</div>
-<div data-id="0,2,0,2:main" style="align-self: flex-start; border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; color: rgba(0,0,0,1); font-family: Itim; font-size: 30px; font-weight: 400; line-height: 36px; margin-bottom: auto; margin-top: auto; text-align: left; white-space: initial" class="ft_md">15th Dec 2021</div></div>
-<div data-id="0,2,1:main" data-spacing="margin-left:40px" style="align-items: flex-start; align-self: flex-start; border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; display: flex; flex-direction: row; flex-wrap: nowrap; justify-content: flex-start; margin-left: 30px; white-space: initial; width: 100%" class="ft_md"><div data-id="0,2,1,0:main" style="align-items: flex-start; align-self: flex-start; border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; display: flex; flex-direction: column; flex-wrap: nowrap; justify-content: flex-start; white-space: initial" class="ft_md"><div data-id="0,2,1,0,0:main" style="align-self: flex-start; border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; color: rgba(0,0,0,1); font-family: Itim; font-size: 66px; font-weight: 400; line-height: 79px; margin-bottom: auto; margin-top: auto; padding-bottom: 25px; text-align: left; white-space: initial" class="ft_md">The fundamentals of understanding color theory</div>
-<div data-id="0,2,1,0,1:main" style="align-self: flex-start; border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; color: rgba(0,0,0,1); font-family: Itim; font-size: 36px; font-weight: 400; line-height: 43px; margin-bottom: auto; margin-top: auto; text-align: left; white-space: initial" class="ft_md">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div></div></div></div>
-<div data-id="seperator:0,3:main" id="seperator" style="align-items: flex-start; align-self: flex-start; background-color: rgba(246,246,246,1); border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; display: flex; flex-direction: row; flex-wrap: nowrap; justify-content: flex-start; padding-bottom: 20px; padding-left: 150px; padding-right: 150px; padding-top: 20px; white-space: initial; width: 100%" class="ft_md"><img alt="" data-id="0,3,0:main" src="/static/post-seperator.png" style="align-self: center; border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; margin-bottom: auto; margin-top: auto; white-space: initial; width: 100%"></div>
-<div data-id="post:0,4:main" data-spacing="margin-left:30px" id="post" style="align-items: flex-start; align-self: flex-start; background-color: rgba(246,246,246,1); border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; display: flex; flex-direction: row; flex-wrap: nowrap; justify-content: flex-start; padding-bottom: 50px; padding-left: 150px; padding-right: 150px; padding-top: 50px; white-space: initial; width: 100%" class="ft_md"><div data-id="0,4,0:main" style="align-items: flex-start; align-self: flex-start; border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; display: flex; flex-direction: column; flex-wrap: nowrap; justify-content: flex-start; white-space: initial" class="ft_md"><a data-id="0,4,0,0:main" href="http://www.post.com" style="align-self: flex-start; border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; cursor: pointer; height: 170px; margin-bottom: auto; margin-top: auto; white-space: initial; width: 330px" class="ft_md"><img alt="" data-id="main:root" src="/static/default-post.png" style="width: 100%"></a>
-<div data-id="0,4,0,1:main" style="align-self: flex-start; border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; color: rgba(138,138,138,1); font-family: Itim; font-size: 24px; font-weight: 400; line-height: 28px; margin-bottom: auto; margin-top: auto; padding-top: 15px; text-align: left; white-space: initial" class="ft_md">Published on</div>
-<div data-id="0,4,0,2:main" style="align-self: flex-start; border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; color: rgba(0,0,0,1); font-family: Itim; font-size: 30px; font-weight: 400; line-height: 36px; margin-bottom: auto; margin-top: auto; text-align: left; white-space: initial" class="ft_md">15th Dec 2021</div></div>
-<div data-id="0,4,1:main" data-spacing="margin-left:40px" style="align-items: flex-start; align-self: flex-start; border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; display: flex; flex-direction: row; flex-wrap: nowrap; justify-content: flex-start; margin-left: 30px; white-space: initial; width: 100%" class="ft_md"><div data-id="0,4,1,0:main" style="align-items: flex-start; align-self: flex-start; border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; display: flex; flex-direction: column; flex-wrap: nowrap; justify-content: flex-start; white-space: initial" class="ft_md"><a data-id="0,4,1,0,0:main" href="./post/index.html" style="align-self: flex-start; border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; color: rgba(0,0,0,1); cursor: pointer; font-family: Itim; font-size: 66px; font-weight: 400; line-height: 79px; margin-bottom: auto; margin-top: auto; padding-bottom: 25px; text-align: left; white-space: initial" class="ft_md">The fundamentals of understanding color theory</a>
-<div data-id="0,4,1,0,1:main" style="align-self: flex-start; border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; color: rgba(0,0,0,1); font-family: Itim; font-size: 36px; font-weight: 400; line-height: 43px; margin-bottom: auto; margin-top: auto; text-align: left; white-space: initial" class="ft_md">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div></div></div></div>
-<div data-id="footer:0,5:main" id="footer" style="align-items: flex-start; align-self: center; background-color: rgba(255,255,255,1); border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; display: flex; flex-direction: row; flex-wrap: nowrap; justify-content: flex-start; margin-bottom: auto; margin-top: auto; padding-bottom: 30px; padding-left: 150px; padding-right: 150px; padding-top: 30px; white-space: initial; width: 100%" class="ft_md"><div data-id="0,5,0:main" style="align-self: flex-start; border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; font-family: Itim; font-size: 16px; font-weight: 400; line-height: 20px; text-align: center; white-space: initial; width: 100%" class="ft_md">© 2022 FPM Blog - Latest FPM News &amp; Updates</div></div></div></div><style>
+        <div data-id="main:root" style="align-items: flex-start; border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; display: flex; flex-direction: column; flex-wrap: nowrap; height: 100%; justify-content: flex-start; white-space: initial; width: 100%" class="ft_md"><div data-id="blog-wrap:0:main" id="blog-wrap" style="align-items: flex-start; border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; display: flex; flex-direction: column; flex-wrap: nowrap; justify-content: flex-start; white-space: initial; width: 100%" class="ft_md"><div data-id="header:0,0:main" id="header" style="align-items: flex-start; background-color: rgba(255,255,255,1); border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; display: flex; flex-direction: row; flex-wrap: nowrap; justify-content: flex-start; padding-bottom: 30px; padding-left: 150px; padding-right: 150px; padding-top: 30px; white-space: initial; width: 100%" class="ft_md"><div data-id="0,0,0:main" style="align-items: flex-start; border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; display: flex; flex-direction: row; flex-wrap: nowrap; justify-content: flex-start; white-space: initial; width: 100%" class="ft_md"><a data-id="0,0,0,0:main" href="https://www.fifthtry.com" style="border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; cursor: pointer; white-space: initial; width: auto" class="ft_md"><img alt="" data-id="main:root" src="./static/logo.png" style="width: 100%"></a>
+<a data-id="0,0,0,1:main" href="https://www.fifthtry.com" style="border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; color: rgba(0,0,0,1); cursor: pointer; font-family: Itim; font-size: 48px; font-weight: 400; padding-left: 20px; text-align: left; white-space: initial" class="ft_md">Fifthtry</a></div>
+<div data-id="0,0,1:main" data-spacing="margin-left:20px" style="align-items: flex-start; border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; display: flex; flex-direction: row; flex-wrap: nowrap; justify-content: flex-start; min-width: 350px; white-space: initial" class="ft_md"><div data-id="0,0,1,0:main" style="align-self: center; border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; color: rgba(123,123,123,1); font-family: Itim; font-size: 20px; font-weight: 400; margin-bottom: auto; margin-top: auto; text-align: left; white-space: initial" class="ft_md">Follow us on</div>
+<a data-id="0,0,1,1:main" href="https://www.twitter.com/fifthtry" style="align-self: center; border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; cursor: pointer; height: 27px; margin-bottom: auto; margin-left: 20px; margin-top: auto; white-space: initial; width: 31px" class="ft_md"><img alt="" data-id="main:root" src="./static/twitter.png" style="width: 100%"></a>
+<a data-id="0,0,1,2:main" href="https://www.facebook.com/fifthtry" style="align-self: center; border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; cursor: pointer; height: 32px; margin-bottom: auto; margin-left: 20px; margin-top: auto; white-space: initial; width: 15px" class="ft_md"><img alt="" data-id="main:root" src="./static/facebook.png" style="width: 100%"></a>
+<a data-id="0,0,1,3:main" href="https://www.linkedin.com/fifthtry" style="align-self: center; border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; cursor: pointer; height: 30px; margin-bottom: auto; margin-left: 20px; margin-top: auto; white-space: initial; width: 31px" class="ft_md"><img alt="" data-id="main:root" src="./static/linkedin.png" style="width: 100%"></a>
+<a data-id="0,0,1,4:main" href="https://www.instagram.com/fifthtry" style="align-self: center; border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; cursor: pointer; height: 30px; margin-bottom: auto; margin-left: 20px; margin-top: auto; white-space: initial; width: 31px" class="ft_md"><img alt="" data-id="main:root" src="./static/instagram.png" style="width: 100%"></a>
+<a data-id="0,0,1,5:main" href="https://www.redit.com/fifthtry" style="align-self: center; border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; cursor: pointer; height: 30px; margin-bottom: auto; margin-left: 20px; margin-top: auto; white-space: initial; width: 37px" class="ft_md"><img alt="" data-id="main:root" src="./static/redit.png" style="width: 100%"></a></div></div>
+<div data-id="author:0,1:main" id="author" style="align-items: flex-start; background-color: rgba(231,231,231,1); border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; display: flex; flex-direction: row; flex-wrap: nowrap; justify-content: flex-start; padding-bottom: 50px; padding-left: 150px; padding-right: 150px; padding-top: 50px; white-space: initial; width: 100%" class="ft_md"><div data-id="0,1,0:main" style="align-items: flex-start; border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; display: flex; flex-direction: column; flex-wrap: nowrap; justify-content: flex-start; white-space: initial" class="ft_md"><div data-id="0,1,0,0:main" style="align-self: flex-start; border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; color: rgba(0,0,0,1); font-family: Itim; font-size: 28px; font-weight: 400; line-height: 67px; margin-right: auto; text-align: left; white-space: initial" class="ft_md">Hi, I am Amit Upadhyay</div>
+<div data-id="0,1,0,1:main" style="align-self: flex-start; border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; color: rgba(0,0,0,1); font-family: Itim; font-size: 36px; font-weight: 400; line-height: 43px; margin-right: auto; text-align: left; white-space: initial" class="ft_md">I’m a web/software developer who loves to build projects and share valuable ps for new programmers on this blog.</div></div>
+<div data-id="0,1,1:main" style="align-items: flex-start; border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; display: flex; flex-direction: row; flex-wrap: nowrap; justify-content: flex-start; min-width: 200px; white-space: initial" class="ft_md"><div data-id="0,1,1,0:main" style="align-items: flex-start; border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; display: flex; flex-direction: column; flex-wrap: nowrap; justify-content: flex-start; white-space: initial" class="ft_md"><img alt="" data-id="0,1,1,0,0:main" src="./static/author-default.png" style="align-self: flex-end; border-radius: 500px; border-style: solid; border-width: 0px; box-sizing: border-box; height: 180px; margin-left: auto; white-space: initial; width: 180px">
+<div data-id="0,1,1,0,1:main" style="align-self: flex-start; border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; color: rgba(0,0,0,1); font-family: Itim; font-size: 24px; font-weight: 400; line-height: 28px; margin-right: auto; text-align: left; white-space: initial" class="ft_md"><a href="mailto:amitu@fifthtry.com">amitu@fifthtry.com</a></div></div></div></div>
+<div data-id="post:0,2:main" data-spacing="margin-left:30px" id="post" style="align-items: flex-start; background-color: rgba(246,246,246,1); border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; display: flex; flex-direction: row; flex-wrap: nowrap; justify-content: flex-start; padding-bottom: 50px; padding-left: 150px; padding-right: 150px; padding-top: 50px; white-space: initial; width: 100%" class="ft_md"><div data-id="0,2,0:main" style="align-items: flex-start; border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; display: flex; flex-direction: column; flex-wrap: nowrap; justify-content: flex-start; white-space: initial" class="ft_md"><a data-id="0,2,0,0:main" href="http://www.post.com" style="align-self: flex-start; border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; cursor: pointer; height: 170px; margin-right: auto; white-space: initial; width: 330px" class="ft_md"><img alt="" data-id="main:root" src="./static/default-post.png" style="width: 100%"></a>
+<div data-id="0,2,0,1:main" style="align-self: flex-start; border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; color: rgba(138,138,138,1); display: none; font-family: Itim; font-size: 24px; font-weight: 400; line-height: 28px; margin-right: auto; padding-top: 15px; text-align: left; white-space: initial" class="ft_md">Published on</div>
+<div data-id="0,2,0,2:main" style="align-self: flex-start; border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; color: rgba(0,0,0,1); font-family: Itim; font-size: 30px; font-weight: 400; line-height: 36px; margin-right: auto; text-align: left; white-space: initial" class="ft_md">15th Dec 2021</div></div>
+<div data-id="0,2,1:main" data-spacing="margin-left:40px" style="align-items: flex-start; border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; display: flex; flex-direction: row; flex-wrap: nowrap; justify-content: flex-start; margin-left: 30px; white-space: initial; width: 100%" class="ft_md"><div data-id="0,2,1,0:main" style="align-items: flex-start; border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; display: flex; flex-direction: column; flex-wrap: nowrap; justify-content: flex-start; white-space: initial" class="ft_md"><div data-id="0,2,1,0,0:main" style="align-self: flex-start; border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; color: rgba(0,0,0,1); font-family: Itim; font-size: 66px; font-weight: 400; line-height: 79px; margin-right: auto; padding-bottom: 25px; text-align: left; white-space: initial" class="ft_md">The fundamentals of understanding color theory</div>
+<div data-id="0,2,1,0,1:main" style="align-self: flex-start; border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; color: rgba(0,0,0,1); font-family: Itim; font-size: 36px; font-weight: 400; line-height: 43px; margin-right: auto; text-align: left; white-space: initial" class="ft_md">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div></div></div></div>
+<div data-id="seperator:0,3:main" id="seperator" style="align-items: flex-start; background-color: rgba(246,246,246,1); border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; display: flex; flex-direction: row; flex-wrap: nowrap; justify-content: flex-start; padding-bottom: 20px; padding-left: 150px; padding-right: 150px; padding-top: 20px; white-space: initial; width: 100%" class="ft_md"><img alt="" data-id="0,3,0:main" src="./static/post-seperator.png" style="align-self: center; border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; margin-bottom: auto; margin-top: auto; white-space: initial"></div>
+<div data-id="post:0,4:main" data-spacing="margin-left:30px" id="post" style="align-items: flex-start; background-color: rgba(246,246,246,1); border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; display: flex; flex-direction: row; flex-wrap: nowrap; justify-content: flex-start; padding-bottom: 50px; padding-left: 150px; padding-right: 150px; padding-top: 50px; white-space: initial; width: 100%" class="ft_md"><div data-id="0,4,0:main" style="align-items: flex-start; border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; display: flex; flex-direction: column; flex-wrap: nowrap; justify-content: flex-start; white-space: initial" class="ft_md"><a data-id="0,4,0,0:main" href="http://www.post.com" style="align-self: flex-start; border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; cursor: pointer; height: 170px; margin-right: auto; white-space: initial; width: 330px" class="ft_md"><img alt="" data-id="main:root" src="./static/default-post.png" style="width: 100%"></a>
+<div data-id="0,4,0,1:main" style="align-self: flex-start; border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; color: rgba(138,138,138,1); display: none; font-family: Itim; font-size: 24px; font-weight: 400; line-height: 28px; margin-right: auto; padding-top: 15px; text-align: left; white-space: initial" class="ft_md">Published on</div>
+<div data-id="0,4,0,2:main" style="align-self: flex-start; border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; color: rgba(0,0,0,1); font-family: Itim; font-size: 30px; font-weight: 400; line-height: 36px; margin-right: auto; text-align: left; white-space: initial" class="ft_md">15th Dec 2021</div></div>
+<div data-id="0,4,1:main" data-spacing="margin-left:40px" style="align-items: flex-start; border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; display: flex; flex-direction: row; flex-wrap: nowrap; justify-content: flex-start; margin-left: 30px; white-space: initial; width: 100%" class="ft_md"><div data-id="0,4,1,0:main" style="align-items: flex-start; border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; display: flex; flex-direction: column; flex-wrap: nowrap; justify-content: flex-start; white-space: initial" class="ft_md"><a data-id="0,4,1,0,0:main" href="./post/index.html" style="align-self: flex-start; border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; color: rgba(0,0,0,1); cursor: pointer; font-family: Itim; font-size: 66px; font-weight: 400; line-height: 79px; margin-right: auto; padding-bottom: 25px; text-align: left; white-space: initial" class="ft_md">The fundamentals of understanding color theory</a>
+<div data-id="0,4,1,0,1:main" style="align-self: flex-start; border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; color: rgba(0,0,0,1); font-family: Itim; font-size: 36px; font-weight: 400; line-height: 43px; margin-right: auto; text-align: left; white-space: initial" class="ft_md">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div></div></div></div>
+<div data-id="footer:0,5:main" id="footer" style="align-items: flex-start; align-self: center; background-color: rgba(255,255,255,1); border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; display: flex; flex-direction: row; flex-wrap: nowrap; justify-content: flex-start; margin-left: auto; margin-right: auto; padding-bottom: 30px; padding-left: 150px; padding-right: 150px; padding-top: 30px; white-space: initial; width: 100%" class="ft_md"><div data-id="0,5,0:main" style="border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; font-family: Itim; font-size: 16px; font-weight: 400; line-height: 20px; text-align: center; white-space: initial; width: 100%" class="ft_md">© 2022 FPM Blog - Latest FPM News &amp; Updates</div></div></div></div><style>
 @font-face { unicode-range: U+0E01-0E5B, U+200C-200D, U+25CC;;
 font-style: normal;;
 font-weight: 400;;
@@ -793,12 +801,15 @@ let ftd_utils = {
                 } else if (json_dependency.dependency_type === "Visible") {
                     let display = "none";
                     if (data[target].value === json_dependency.condition) {
-                        let is_flex = document.querySelector(`[data-id="${dependency}:${id}"]`).style.flexDirection.length;
-                        let is_webkit = document.querySelector(`[data-id="${dependency}:${id}"]`).style.webkitLineClamp.length;
+                        let is_flex = !!document.querySelector(`[data-id="${dependency}:${id}"]`).style.flexDirection.length;
+                        let is_grid = !!document.querySelector(`[data-id="${dependency}:${id}"]`).style.gridTemplateAreas.length;
+                        let is_webkit = !!document.querySelector(`[data-id="${dependency}:${id}"]`).style.webkitLineClamp.length;
                         if (is_flex) {
                             display = "flex";
                         } else if (is_webkit) {
                             display = "-webkit-box";
+                        } else if (is_grid) {
+                            display = "grid";
                         } else {
                             display = "block";
                         }
@@ -1078,20 +1089,25 @@ window.ftd = (function () {
     const COOKIE_SYSTEM_DARK = "system-dark";
     const COOKIE_DARK_MODE = "dark";
     const COOKIE_LIGHT_MODE = "light";
+    const DARK_MODE_CLASS = "fpm-dark";
 
     let last_device;
 
     function initialise_device() {
         last_device = is_mobile();
+        console.log("is_mobile", last_device);
         window.ftd.set_bool_for_all(FPM_MOBILE, last_device);
     }
 
     window.onresize = function () {
         let current = is_mobile();
-        if (current !== last_device) {
-            window.ftd.set_bool_for_all(FPM_MOBILE, current);
-            last_device = current;
+        if (current === last_device) {
+            return;
         }
+
+        window.ftd.set_bool_for_all(FPM_MOBILE, current);
+        last_device = current;
+        console.log("is_mobile", last_device);
     }
 
     function is_mobile() {
@@ -1111,7 +1127,7 @@ window.ftd = (function () {
         // another function detect_orientation(), "landscape" and "portrait" etc,
         // and instead of setting `fpm-ui#mobile: boolean` we set `fpm-ui#device`
         // and `fpm-ui#viewport-orientation` etc.
-        return width <= 1200;
+        return width <= 800;
     }
 
     window.show_main = function () {
@@ -1166,6 +1182,7 @@ window.ftd = (function () {
         //       update
         window.ftd.set_bool_for_all(FPM_DARK_MODE, true);
         window.ftd.set_bool_for_all(FPM_FOLLOW_SYSTEM_DARK_MODE, false);
+        document.body.classList.add(DARK_MODE_CLASS);
         set_cookie(DARK_MODE_COOKIE, COOKIE_DARK_MODE);
     }
 
@@ -1174,6 +1191,7 @@ window.ftd = (function () {
         //       update
         window.ftd.set_bool_for_all(FPM_DARK_MODE, false);
         window.ftd.set_bool_for_all(FPM_FOLLOW_SYSTEM_DARK_MODE, false);
+        document.body.classList.remove(DARK_MODE_CLASS);
         set_cookie(DARK_MODE_COOKIE, COOKIE_LIGHT_MODE);
     }
 
@@ -1183,9 +1201,11 @@ window.ftd = (function () {
         window.ftd.set_bool_for_all(FPM_FOLLOW_SYSTEM_DARK_MODE, true);
         if (system_dark_mode()) {
             window.ftd.set_bool_for_all(FPM_DARK_MODE, true);
+            document.body.classList.add(DARK_MODE_CLASS);
             set_cookie(DARK_MODE_COOKIE, COOKIE_SYSTEM_DARK)
         } else {
             window.ftd.set_bool_for_all(FPM_DARK_MODE, false);
+            document.body.classList.remove(DARK_MODE_CLASS);
             set_cookie(DARK_MODE_COOKIE, COOKIE_SYSTEM_LIGHT)
         }
     }
@@ -1222,7 +1242,7 @@ window.ftd = (function () {
     }
 
     function set_cookie(name, value) {
-        document.cookie = name + "=" + value;
+        document.cookie = name + "=" + value + "; path=/";
     }
 
     function system_dark_mode() {

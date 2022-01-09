@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <meta charset="UTF-8">
+        <meta charset="UTF-8"><base href="/">
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
         <title>docs2.ftd</title>
         <script type="ftd" id="ftd-data">{
@@ -267,10 +267,14 @@ ul {
 .ft_md blockquote>blockquote {
     margin: 0;
 }
+
+body.fpm-dark .ft_md code {
+    color: black;
+}
 </style>
     </head>
     <body>
-        <div data-id="main:root" style="align-items: flex-start; align-self: center; border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; display: flex; flex-direction: column; flex-wrap: wrap; height: 100%; justify-content: flex-start; margin-bottom: auto; margin-top: auto; white-space: initial; width: 100%" class="ft_md"></div><style>
+        <div data-id="main:root" style="align-items: flex-start; border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; display: flex; flex-direction: column; flex-wrap: nowrap; height: 100%; justify-content: flex-start; white-space: initial; width: 100%" class="ft_md"></div><style>
 @font-face { unicode-range: U+0E01-0E5B, U+200C-200D, U+25CC;;
 font-style: normal;;
 font-weight: 400;;
@@ -528,12 +532,15 @@ let ftd_utils = {
                 } else if (json_dependency.dependency_type === "Visible") {
                     let display = "none";
                     if (data[target].value === json_dependency.condition) {
-                        let is_flex = document.querySelector(`[data-id="${dependency}:${id}"]`).style.flexDirection.length;
-                        let is_webkit = document.querySelector(`[data-id="${dependency}:${id}"]`).style.webkitLineClamp.length;
+                        let is_flex = !!document.querySelector(`[data-id="${dependency}:${id}"]`).style.flexDirection.length;
+                        let is_grid = !!document.querySelector(`[data-id="${dependency}:${id}"]`).style.gridTemplateAreas.length;
+                        let is_webkit = !!document.querySelector(`[data-id="${dependency}:${id}"]`).style.webkitLineClamp.length;
                         if (is_flex) {
                             display = "flex";
                         } else if (is_webkit) {
                             display = "-webkit-box";
+                        } else if (is_grid) {
+                            display = "grid";
                         } else {
                             display = "block";
                         }
@@ -813,20 +820,25 @@ window.ftd = (function () {
     const COOKIE_SYSTEM_DARK = "system-dark";
     const COOKIE_DARK_MODE = "dark";
     const COOKIE_LIGHT_MODE = "light";
+    const DARK_MODE_CLASS = "fpm-dark";
 
     let last_device;
 
     function initialise_device() {
         last_device = is_mobile();
+        console.log("is_mobile", last_device);
         window.ftd.set_bool_for_all(FPM_MOBILE, last_device);
     }
 
     window.onresize = function () {
         let current = is_mobile();
-        if (current !== last_device) {
-            window.ftd.set_bool_for_all(FPM_MOBILE, current);
-            last_device = current;
+        if (current === last_device) {
+            return;
         }
+
+        window.ftd.set_bool_for_all(FPM_MOBILE, current);
+        last_device = current;
+        console.log("is_mobile", last_device);
     }
 
     function is_mobile() {
@@ -846,7 +858,7 @@ window.ftd = (function () {
         // another function detect_orientation(), "landscape" and "portrait" etc,
         // and instead of setting `fpm-ui#mobile: boolean` we set `fpm-ui#device`
         // and `fpm-ui#viewport-orientation` etc.
-        return width <= 1200;
+        return width <= 800;
     }
 
     window.show_main = function () {
@@ -901,6 +913,7 @@ window.ftd = (function () {
         //       update
         window.ftd.set_bool_for_all(FPM_DARK_MODE, true);
         window.ftd.set_bool_for_all(FPM_FOLLOW_SYSTEM_DARK_MODE, false);
+        document.body.classList.add(DARK_MODE_CLASS);
         set_cookie(DARK_MODE_COOKIE, COOKIE_DARK_MODE);
     }
 
@@ -909,6 +922,7 @@ window.ftd = (function () {
         //       update
         window.ftd.set_bool_for_all(FPM_DARK_MODE, false);
         window.ftd.set_bool_for_all(FPM_FOLLOW_SYSTEM_DARK_MODE, false);
+        document.body.classList.remove(DARK_MODE_CLASS);
         set_cookie(DARK_MODE_COOKIE, COOKIE_LIGHT_MODE);
     }
 
@@ -918,9 +932,11 @@ window.ftd = (function () {
         window.ftd.set_bool_for_all(FPM_FOLLOW_SYSTEM_DARK_MODE, true);
         if (system_dark_mode()) {
             window.ftd.set_bool_for_all(FPM_DARK_MODE, true);
+            document.body.classList.add(DARK_MODE_CLASS);
             set_cookie(DARK_MODE_COOKIE, COOKIE_SYSTEM_DARK)
         } else {
             window.ftd.set_bool_for_all(FPM_DARK_MODE, false);
+            document.body.classList.remove(DARK_MODE_CLASS);
             set_cookie(DARK_MODE_COOKIE, COOKIE_SYSTEM_LIGHT)
         }
     }
@@ -957,7 +973,7 @@ window.ftd = (function () {
     }
 
     function set_cookie(name, value) {
-        document.cookie = name + "=" + value;
+        document.cookie = name + "=" + value + "; path=/";
     }
 
     function system_dark_mode() {
